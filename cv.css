@@ -1,0 +1,216 @@
+/* =========================
+   STYLE GÉNÉRAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTENEUR DU CV
+========================= */
+
+.cv {
+    width: 800px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   EN-TÊTE
+========================= */
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #1769aa;
+}
+
+header h1 {
+    color: #1769aa;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #555;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #1769aa;
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #1769aa;
+}
+
+
+/* =========================
+   PROFIL
+========================= */
+
+section p {
+    text-align: justify;
+}
+
+
+/* =========================
+   FORMATION
+========================= */
+
+.formation {
+    margin-bottom: 15px;
+}
+
+.formation h4 {
+    color: #222;
+    font-size: 17px;
+}
+
+.formation p {
+    margin: 2px 0;
+}
+
+
+/* =========================
+   COMPÉTENCES
+========================= */
+
+.competences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.competence {
+    padding: 12px;
+    background-color: #eef6fc;
+    border-left: 4px solid #1769aa;
+}
+
+.competence strong {
+    color: #1769aa;
+}
+
+.competence p {
+    margin-top: 3px;
+}
+
+
+/* =========================
+   LISTES
+========================= */
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   LANGUES
+========================= */
+
+.langue {
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    padding: 5px 0;
+}
+
+.langue strong {
+    color: #1769aa;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* =========================
+   VERSION MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+    .cv {
+        width: 95%;
+        margin: 15px auto;
+        padding: 25px;
+    }
+
+    .competences {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+/* =========================
+   IMPRESSION / PDF
+========================= */
+
+@media print {
+
+    body {
+        background-color: black;
+    }
+
+    .cv {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-shadow: none;
+    }
+}

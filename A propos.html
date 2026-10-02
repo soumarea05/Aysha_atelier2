@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#" class="logo">Ayesha Soumaré</a>
+    <nav>
+      <a href="#">Projets</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- À propos -->
+  <section class="apropos" id="apropos">
+    <div class="apropos-top">
+      <h1>À propos de moi</h1>
+      <div class="apropos-text">
+        <h3>Je suis développeur front-end basé à DAKAR, avec une formation en génie Informatique.</h3>
+        <p>Je suis développeur front-end basé à Dakar et je recherche des opportunités passionnantes. Avec une formation en génie informatique, j'accorde une grande importance à l'accessibilité dans mes développements. Passionné et curieux, j'aime relever des défis et résoudre des problèmes.</p>
+        <p>En ce moment, j'explore React.js, laravel et je m'intéresse aussi un peu au design. En dehors du code, j'aime jouer au basktball, pratiquer et la patisserie . Je continue d'apprendre chaque jour pour améliorer mes compétences</p>
+        <div class="actions">
+          <a href="#" class="btn-cv">Télécharger CV <span class="icon-circle"><i class="fa-solid fa-download"></i></span></a>
+          <a href="#" class="icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="icon-btn"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img src="WhatsApp Image 2026-09-30 at 17.14.30.jpeg" alt="Photo de profil">
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section class="section">
+    <h2>Mes compétences</h2>
+    <div class="content">
+      <p>Je suis toujours à la recherche de nouvelles compétences à développer. J'aime relever de nouveaux défis, apprendre des technologies variées et enrichir continuellement mon savoir-faire pour proposer des solutions modernes et efficaces</p>
+      <ul class="tags">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Bootstrap</li>
+        <li>Figma</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Expérience -->
+  <section class="section">
+    <h2>Mon expérience</h2>
+    <div class="content">
+      <article class="job">
+        <header>
+          <h3>Développeuse freelance</h3>
+          <span class="date">Oct 2026 — Présent</span>
+        </header>
+        <p>J'ai exercé en tant que développeuse freelance sur différents projets, en assurant la conception et la réalisation de solutions web adaptées aux besoins spécifiques des clients. Je veille à garantir des livrables de haute qualité, alliant accessibilité, performance et fiabilité, tout en respectant les délais impartis.</p>
+      </article>
+
+      <article class="job">
+        <header>
+          <h3>Stagiaire Front-End</h3>
+          <span class="date">Sep 2026 — Oct 2026</span>
+        </header>
+        <span class="company">Defar-Sci</span>
+        <p>Defar-Sci; est une entreprise dynamique spécialisée dans le développement de solutions digitales sur mesure pour les PME et startups. Forte d'une équipe de 25 collaborateurs passionnés,</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="contact-left">
+      <h2>Entrons en contact</h2>
+      <p>Dites bonjour à <a href="mailto:soumarea774@gmail.com">soumarea774@gmail.com</a></p>
+      <p>Pour en savoir plus, voici mon ... <a href="#">cv</a></p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="copyright">© 2026 Ayesha Soumaré</p>
+    </div>
+
+    <form class="contact-form">
+      <label for="nom">Nom Complet</label>
+      <input type="text" id="nom" placeholder="John Doe">
+
+      <label for="email">Email</label>
+      <input type="email" id="email">
+
+      <label for="sujet">Sujet</label>
+      <input type="text" id="sujet">
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5"></textarea>
+
+      <button type="submit" class="btn-send">Envoyer</button>
+    </form>
+  </section>
+
+</body>
+</html>
